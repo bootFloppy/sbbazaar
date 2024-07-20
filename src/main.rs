@@ -23,7 +23,7 @@ fn main() {
         let now = Utc::now();
         let str_timestamp =  format!("{}", now.timestamp());
 
-        let _ = fs::write("/home/bismuthneon/Bazaar/".to_owned() + &str_timestamp + ".json", response.text().unwrap());
+        let _ = fs::write("$HOME/Bazaar/".to_owned() + &str_timestamp + ".json", response.text().unwrap());
 
         thread::sleep(set_time);
     }
